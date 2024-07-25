@@ -1,0 +1,24 @@
+.customer_navbar_wrapper {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.customer_navbar_wrapper .logo {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1363DF;
+}
+@media (max-width: 767.98px) {
+  .customer_navbar_wrapper .logo {
+    font-size: 24px;
+  }
+}
+.customer_navbar_wrapper .custom_nalink_wrapper {
+  justify-content: flex-end;
+}
+@media (max-width: 767.98px) {
+  .customer_navbar_wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}/*# sourceMappingURL=navbar.module.css.map */

@@ -1,0 +1,22 @@
+.customer_navbar_wrapper {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    .logo {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #1363DF;
+
+        @media (max-width: 767.98px) {
+            font-size: 24px;
+        }
+    }
+
+    .custom_nalink_wrapper {
+        justify-content: flex-end;
+    }
+    @media (max-width: 767.98px) { 
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}

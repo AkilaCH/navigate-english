@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//Default Font sizes
+$font-size-one: 16px;
+$font-size-two: 20px;
+$font-size-three: 24px;
+$font-size-four: 32px;
+$font-size-five: 36px;
+$font-size-six: 40px;
+$font-size-seven: 48px;
+$font-size-eight: 64px;
+$font-size-nine: 96px;
+$font-size-ten: 128px;
+
+//Custom Font sizes
+$font-custom-one: 70px;
+$font-custom-two: 60px;
+$font-custom-three: 14px;
+
+//Font Weight
+$font-Weight-one: 100;
+$font-Weight-two: 200;
+$font-Weight-three: 300;
+$font-Weight-four: 400;
+$font-Weight-five: 500;
+$font-Weight-six: 600;
+$font-Weight-seven: 700;
+$font-Weight-eight: 800;
+$font-Weight-eight: 900;
+
+
+//Custom Colors
+$custom-color-primary: #1363DF;
+$custom-color-secondary: #06283D;
+$custom-color-light: #DFF6FF;
+$custom-color-white: #ffffff;
+$custom-color-grey: #5C5C5C;
+
+//font-family
+$font-family-one: "Poppins", sans-serif;
+
+.header_wrapper {
+    background-color: $custom-color-primary;
+    height: 50px;
+    font-family: $font-family-one;
+}
+
+/* Hero section */
+
+.hero_wrapper {
+    background-color: $custom-color-primary;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    .hero_img_wrapper {
+        position: relative;
+        
+        .hero_img {
+            width: 420px;
+            position: absolute;
+            bottom: 0;
+
+            @media (max-width: 767.98px) { 
+                width: 100%;
+                position: relative;
+            }
+        }
+        @media (max-width: 767.98px) {
+            order: 2;
+        }
+    }
+
+    .hero_text_wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .hero_title {
+            color: $custom-color-white;
+            font-family: $font-family-one;
+            font-size: $font-size-eight;
+
+            @media (max-width: 767.98px) {
+                font-size: $font-size-four;
+            }
+        }
+
+        .hero_paragraph{
+            color: $custom-color-white;
+            font-family: $font-family-one;
+            font-size: $font-size-three;
+
+            @media (max-width: 767.98px) {
+                font-size: $font-size-two;
+            }
+        }
+    }
+
+    .hero_button_wrapper {
+        .hero_btn {
+            width: 200px;
+            height: 60px;
+            font-size: $font-size-one;
+            background-color: $custom-color-white;
+            color: $custom-color-primary;
+            font-family: $font-family-one;
+            font-size: $font-size-two;
+            font-weight: $font-Weight-five;
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+        }
+
+        .learn_more_btn {
+            background: none;
+            border: 2px solid $custom-color-white;
+            color: $custom-color-white;
+
+            @media (max-width: 767.98px) {
+                margin-left: 0 !important;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    
+    @media (max-width: 767.98px) { 
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Learn more section */
+
+.learn_more_section {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .learn_more_title {
+        color: $custom-color-secondary;
+        font-size: $font-size-seven;
+        font-weight: $font-Weight-six;
+        font-family: $font-family-one;
+
+        @media (max-width: 767.98px) {
+            font-size: $font-size-five;
+        }
+    }
+
+    .learn_more_img {
+        width: 100%;
+    }
+
+    .learn_more_para {
+        font-size: $font-size-three;
+        color: $custom-color-secondary;
+        text-align: center;
+        font-family: $font-family-one;
+        font-weight: $font-Weight-six;
+
+        @media (max-width: 767.98px) {
+            font-size: $font-size-two;
+        }
+    }
+
+    .learn_more_btn {
+        text-align: center;
+        width: 300px;
+        height: 60px;
+        margin: 0 auto;
+        background-color: $custom-color-primary;
+        color: $custom-color-white;
+        font-family: $font-family-one;
+        font-weight: $font-Weight-five;
+        font-size: $font-size-three;
+
+        @media (max-width: 767.98px) {
+            width: 100%;
+            font-size: $font-size-two;
+        }
+    }
+    
+    @media (max-width: 767.98px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.learn_faster_section {
+    background-color: $custom-color-secondary;
+    font-family: $font-family-one;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    
+
+    .learn_faster_title {
+        color: $custom-color-white;
+    }
+
+    .ads_section_wrapper {
+
+        .ads_image_section {
+            .ads_ads_image {
+                width: 80%;
+                bottom: 0;
+            }
+            @media (max-width: 767.98px) {
+                order: 2;
+            }
+        }
+
+        .ad_text_section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .ad_text {
+                font-size: $font-size-two;
+                color: $custom-color-white;
+                text-align: center;
+
+                @media (max-width: 767.98px) {
+                    text-align: left;
+                }
+            }
+        }
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+         }
+    }
+    @media (max-width: 767.98px) { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.about_me_section {
+    font-family: $font-family-one;
+    .learn_faster_title {
+        font-size: $font-size-five;
+        font-weight: $font-Weight-six;
+        color: $custom-color-primary;
+    }
+    .about_me_img {
+        width: 100%;
+    }
+
+    .about_me_text {
+        padding-left: 10rem;
+        padding-right: 10rem;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about_me_para {
+            font-size: $font-size-four;
+            
+            .span_text {
+                color: $custom-color-primary;
+                font-weight: $font-Weight-six;
+            }
+
+            @media (max-width: 767.98px) {
+                font-size: $font-size-two;
+            }
+        }
+
+        .about_me_btn {
+            background-color: $custom-color-primary;
+            font-size: $font-size-four;
+            width: 500px;
+            height: 80px;
+
+            @media (max-width: 767.98px) { 
+                width: 100%;
+                font-size: $font-size-two;
+                height: 60px;
+            }
+        }
+
+        @media (max-width: 767.98px) { 
+            padding-left: 1rem;
+            padding-right: 1rem;    
+        }
+    }
+}
+
+.static_section {
+    background-color: $custom-color-secondary;
+    padding-left: 8rem;
+    padding-right: 8rem;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: $font-family-one;
+
+    .static_info {
+        color: $custom-color-white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .static_number {
+            font-weight: $font-Weight-seven;
+            font-size: $font-size-nine;
+        }
+
+        .static_number_info {
+            font-size: $font-size-two;
+        }
+
+        @media (max-width: 767.98px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    @media (max-width: 767.98px) { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex-direction: column;
+    }
+}
+
+.find_me_section {
+    background-color: $custom-color-light;
+    font-family: $font-family-one;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    .learn_faster_title {
+        color: $custom-color-secondary;
+        font-size: $font-size-seven;
+        font-weight: 600;
+        font-family: $font-family-one;
+    }
+
+    .social_media_boxs_row {
+        margin-top: 1.5rem;
+    }
+
+    .social_media_boxs {
+        .social_media_links_boxs {
+            padding: 1rem;
+            height: 100%;
+            border-radius: 10px;
+
+            .box_img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .card_text {
+                font-size: $font-size-four;
+                color: $custom-color-secondary;
+                font-weight: $font-Weight-six;
+            }
+        }
+
+        @media (max-width: 767.98px) { 
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 767.98px) { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
